@@ -46,6 +46,30 @@ No login, no server, no tracking. All data lives in your browser's `localStorage
 | Persistence    | Browser `localStorage` (no backend, no database) |
 | Hosting        | Static — deployable to Netlify, Vercel, or GitHub Pages |
 
+## Live Link:
+https://6a53d084d971062aaba272a1--gregarious-platypus-5b799a.netlify.app/
+
 ---
 
 ## 📂 Project structure
+habit-tracker/
+├── src/
+│   ├── components/
+│   │   ├── Onboarding.jsx        # First-run: name + purpose
+│   │   ├── Header.jsx            # Daily purpose heading + streak counter
+│   │   ├── TaskInput.jsx         # Add a task, choose Now / Today
+│   │   ├── TaskCard.jsx          # Task row: complete toggle, hours input, heatmap
+│   │   ├── Heatmap.jsx           # 30-day intensity grid for one task
+│   │   ├── HoursChart.jsx        # Monthly area chart of hours logged
+│   │   ├── ScreenTimeTracker.jsx # Social media minutes input + trend chart
+│   │   └── MonthSummary.jsx      # Stat cards + HoursChart
+│   ├── utils/
+│   │   ├── dates.js              # Date key helpers, last-30-days generation
+│   │   └── storage.js            # localStorage read/write, streak logic, trimming
+│   ├── App.jsx                   # Top-level state + layout
+│   ├── main.jsx                  # React entry point
+│   └── index.css                 # Design tokens, gradients, animations
+├── index.html
+├── vite.config.js
+└── package.json
+
